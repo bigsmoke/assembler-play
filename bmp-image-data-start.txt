@@ -1,0 +1,4 @@
+The two bytes at 0xA specifies the offset at which the BMP data begins. For
+test image, that is 0x436.
+
+The image itself was 65078 bytes big, but I padded it to 64k
