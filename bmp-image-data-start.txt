@@ -1,4 +1,6 @@
 The two bytes at 0xA specifies the offset at which the BMP data begins. For
-test image, that is 0x436.
+test image (which I no longer use), that is 0x436.
 
-The image itself was 65078 bytes big, but I padded it to 64k
+The image I use now has data starting at 0x108. You have to add two because the
+showimage bin file is two bytes bigger than I want it. The image is padded to 64k.
+
