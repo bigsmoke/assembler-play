@@ -13,7 +13,7 @@ start:
     mov al, 0x13
     int 10h
 
-load_image_to_mem
+load_image_to_mem:
     ; Why put this in ax first?
     mov ax, 2000h       ; ES:BX = 2000:0000
     mov es, ax          ;
@@ -68,3 +68,5 @@ hang:                   ; Hang!
 ; Without this, it won't boot for some reason.
 ; This and the bootloader are exactly 10 sectors +2 bytes long.
 times 4608-($-$$) db 0
+
+; vim: set ts=4 sw=4 expandtab:
